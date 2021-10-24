@@ -191,7 +191,7 @@ while(True):
             print("\n\n\n")
 
             if verified_choice == 1:
-                for trans in verified:
+                for tran in verified:
                     bcn.add_new_block(tran.data,tran.amount,tran.timestamp)
                 verified.clear()
             
