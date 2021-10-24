@@ -31,8 +31,13 @@ class Node():
         self.s.close()
     
     def get_verified(self,new_tran):
-        unver_tran=str(new_tran)+self.password
-        self.s.send(unver_tran.encode())
-        return self.s.recv(1024).decode()
+        if self.type == 0:
+            unver_tran=str(new_tran)+self.password
+            self.s.send(unver_tran.encode())
+            return self.s.recv(1024).decode()
+        else:
+            unver_tran=str(new_tran)+self.password
+            self.s.send(unver_tran.encode())
+            return self.s.recv(1024).decode()
 
 
