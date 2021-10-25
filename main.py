@@ -84,6 +84,7 @@ def proof_of_athority(new_tran):
 
         # penalty to the leader
 
+ConnectNodes()
 
 while(True):
 
