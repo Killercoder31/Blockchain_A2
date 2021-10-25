@@ -1,7 +1,7 @@
 from block import Block
 from time import time
 
-class Blockchaink():
+class Blockchain():
 
     # initiated with an empty list of blocks and then goes on to add a genesis(starting) block to it
     def __init__(self):
